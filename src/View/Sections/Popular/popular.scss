@@ -1,0 +1,19 @@
+.popular {
+    font-size: 55px;
+    color: #FFFFFF;
+    width: calc(100vw / 2);
+
+    @media (max-width: 580px) {
+        font-size: 45px;
+    }
+    
+    @media (max-width: 460px) {
+        font-size: 30px;
+    }
+
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

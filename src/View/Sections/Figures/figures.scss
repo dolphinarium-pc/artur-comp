@@ -1,0 +1,33 @@
+@import "../../../styles/mixins.scss";
+
+
+.figures {
+    display: flex;
+    justify-content: space-between;
+        
+    height: 400px;
+    padding: 50px;
+
+    @media (max-width: 810px) {
+        align-content: unset;
+        align-items: unset;
+        display: grid;
+        gap: 40px;
+        grid-auto-rows: min-content;
+        grid-template-columns: repeat(2,minmax(50px,1fr));
+        grid-template-rows: repeat(2,min-content);
+        height: min-content;
+        justify-content: space-between;
+        padding: 60px;
+    }
+}
+
+.figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_img {
+        @include square(80);
+    }
+}

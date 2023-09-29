@@ -1,0 +1,44 @@
+.common {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    padding: 100px;
+
+    &_block {
+        display: flex;
+        gap: 100px;
+
+        @media (max-width: 810px) {
+            flex-direction: column;
+        }
+
+        &_divide {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &_title {
+        color: #9A8C98;
+        font-family: 'Unica One', sans-serif;
+        font-size: 48px;
+
+        @media (max-width: 810px) {
+            font-size: 30px;
+        }
+    }
+
+    &_text {
+        font-family: 'Zilla Slab';
+        color: #C9ADA7;
+        font-size: 16px;
+
+        &_title {
+            color: #9A8C98;
+            font-size: 20px;
+            font-family: 'Zilla Slab';
+        }
+    }
+}

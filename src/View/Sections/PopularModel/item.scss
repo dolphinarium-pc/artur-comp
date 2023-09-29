@@ -1,0 +1,36 @@
+@import "../../../styles/mixins.scss";
+
+.popular-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600px;
+    gap: 40px;
+    padding: 50px;
+    justify-content: space-around;
+
+    .item {
+        &_img {
+            @include square(300);
+            border-radius: 30px;
+
+            @media (min-width: 1000px) and (max-width: 1100px) {
+                // @include square(#{100vw * 0.27});
+                width: 100vw * 0.27;
+                height: 100vw * 0.27;
+            }
+        }
+
+        &_content {
+            color: #FFFFFF;
+            width: max-content;
+            width: 290px;
+            font-size: 20px;
+            font-family: 'Zilla Slab';
+            line-height: 1.4em;
+
+            @media (min-width: 1419px) {
+                width: 360px;
+            }
+        }
+    }
+}
