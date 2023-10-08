@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const SwiperBtns: React.FC<Props> = ({ changeSlideAction, elemesCount, activeIndex }) => {
-    const leftPadding = activeIndex * 22;
+    const leftPadding = activeIndex * 25;
 
     
 
@@ -28,7 +28,7 @@ export const SwiperBtns: React.FC<Props> = ({ changeSlideAction, elemesCount, ac
               className="activator-btn"
               style={{
                 position: 'absolute',
-                top: '1.75px',
+                top: '14px',
                 left: `${leftPadding}px`
               }} 
             >

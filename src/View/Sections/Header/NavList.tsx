@@ -7,6 +7,7 @@ const contentArr = [
     "Text2",
     "Text3",
     "Text4",
+    "Text5",
 ];
 
 export const NavList: React.FC = () => {
